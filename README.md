@@ -1,5 +1,11 @@
 # The Ultimate Docker Cheatsheets
 
+start a container from image   
+`docker run -d -it --name container_name_given image_name bash`  
+`-i interactive` `-t tty` `-d detach` `bash command`  
+
+
+
 Full Dockercheatsheets 
 ![full](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet8.png)
 
