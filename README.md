@@ -2,8 +2,12 @@
 
 start a container from image   
 `docker run -d -it --name container_name_given image_name bash`  
-`-i interactive` `-t tty` `-d detach` `bash command`  
+`-i interactive` `-t tty` `-d detach` `bash command`    
+run container  
+`docker exec -it container_name_given bash`
 
+run container as root   
+`docker exec -u root -t -i container_id /bin/bash`  
 
 
 Full Dockercheatsheets 
