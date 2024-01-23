@@ -9,6 +9,9 @@ run container
 run container as root   
 `docker exec -u root -t -i container_id /bin/bash`  
 
+save container as image
+`docker commit container_name image_name_whatever_you_give`  
+
 
 Full Dockercheatsheets 
 ![full](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet8.png)
