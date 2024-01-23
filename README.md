@@ -9,9 +9,12 @@ run container
 run container as root   
 `docker exec -u root -t -i container_id /bin/bash`  
 
-save container as image
+save container as image  
 `docker commit container_name image_name_whatever_you_give`  
 
+ save image to file  
+ `docker save image_name file_name.tar`  
+ 
 
 Full Dockercheatsheets 
 ![full](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet8.png)
