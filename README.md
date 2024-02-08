@@ -21,6 +21,24 @@ if image name xpt2csv then tag like this
  then   
  `docker push yousuf28/xpt2csv`  
  
+### volume
+`docker run -v <host_directory>:<container_directory> <image>`  
+To mount the current directory into the container at a specified path,  
+`docker run -v .:/path/to/directory <image>`  
+To mount the current directory at the same path into the container 
+might have to put "$(pwd)"  like this with double quote.  
+`docker run -v $(pwd):$(pwd) <image>`   
+on windows   
+`docker run -v C:\\Users\\user\\work:/work <image>`  
+or  
+`docker run -v //c/Users/user/work:/work <image>`   
+Note that when using the $(pwd) command substitution, you will have to prepend a __slash__ character to this expression in order for it to work:  
+`docker run -v /$(pwd):/work <image>`  
+`docker run -d -it  --name xpt5 -v "/$(pwd)":/home  yousuf28/xpt2csv`
+
+[see end of page for windows](https://www.warp.dev/terminus/docker-run-volume)  
+
+
 
 Full Dockercheatsheets 
 ![full](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet8.png)
