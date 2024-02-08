@@ -14,6 +14,12 @@ save container as image
 
  save image to file  
  `docker save image_name > file_name.tar`  
+docker push  
+`docker login`  
+if image name xpt2csv then tag like this  
+` docker image tag xpt2csv yousuf28/xpt2csv`  
+ then   
+ `docker push yousuf28/xpt2csv`  
  
 
 Full Dockercheatsheets 
