@@ -36,6 +36,14 @@ Note that when using the $(pwd) command substitution, you will have to prepend a
 `docker run -v /$(pwd):/work <image>`  
 `docker run -d -it  --name xpt5 -v "/$(pwd)":/home  yousuf28/xpt2csv`
 
+
+### docker compose 
+```yml
+docker compose up (in docker compose dir)
+docker ps -a
+docker exec -it container_id from above
+```
+
 [see end of page for windows](https://www.warp.dev/terminus/docker-run-volume)  
 
 
